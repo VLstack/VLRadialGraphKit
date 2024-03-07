@@ -39,35 +39,35 @@ public final class VLRadialGraphData: Identifiable//, Sendable
   return normalized
  }
  
- func set(values: [ Double ],
-          update: Bool = true) async
+ public func set(values: [ Double ],
+                 update: Bool = true) async
  {
   self.values = values
   if update { await compute() }
  }
  
- func set(startAngle: Double,
-          update: Bool = true) async
+ public func set(startAngle: Double,
+                 update: Bool = true) async
  {
   self.startAngle = startAngle
   if update { await compute() }
  }
 
- func set(endAngle: Double,
-          update: Bool = true) async
+ public func set(endAngle: Double,
+                 update: Bool = true) async
  {
   self.endAngle = endAngle
   if update { await compute() }
  }
  
- func set(maximum: Double?,
-          update: Bool = true) async
+ public func set(maximum: Double?,
+                 update: Bool = true) async
  {
   self.maximum = maximum
   if update { await compute() }
  }
 
- func compute() async
+ private func compute() async
  {
   let startAngle: Double = normalize(angle: self.startAngle)
   var endAngle: Double = normalize(angle: self.endAngle)
