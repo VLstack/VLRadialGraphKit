@@ -2,9 +2,9 @@ import SwiftUI
 import VLShapeKit
 
 @Observable
-final class VLRadialGraphData: Identifiable//, Sendable
+public final class VLRadialGraphData: Identifiable//, Sendable
 {
- let id: String = UUID().uuidString
+ public let id: String = UUID().uuidString
 
  @ObservationIgnored
  var values: [ Double ]

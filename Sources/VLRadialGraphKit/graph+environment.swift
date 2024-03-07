@@ -22,29 +22,25 @@ struct VLRadialGraphStrokeWidthKey: EnvironmentKey
 
 extension EnvironmentValues
 {
- public
- var radialGraphColors: [ Color ]
+ public var radialGraphColors: [ Color ]
  {
   get { self[VLRadialGraphColorsKey.self] }
   set { self[VLRadialGraphColorsKey.self] = newValue }
  }
  
- public
- var radialGraphThickness: Double
+ public var radialGraphThickness: Double
  {
   get { self[VLRadialGraphThicknessKey.self] }
   set { self[VLRadialGraphThicknessKey.self] = newValue }
  }
  
- public
- var radialGraphStroke: Color
+ public var radialGraphStroke: Color
  {
   get { self[VLRadialGraphStrokeKey.self] }
   set { self[VLRadialGraphStrokeKey.self] = newValue }
  }
  
- public
- var radialGraphStrokeWidth: Double
+ public var radialGraphStrokeWidth: Double
  {
   get { self[VLRadialGraphStrokeWidthKey.self] }
   set { self[VLRadialGraphStrokeWidthKey.self] = newValue }

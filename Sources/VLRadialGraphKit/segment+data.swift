@@ -2,9 +2,9 @@ import Foundation
 import SwiftUI
 
 @Observable
-final class VLRadialGraphSegmentData: Identifiable
+public final class VLRadialGraphSegmentData: Identifiable
 {
- let id: String = UUID().uuidString
+ public let id: String = UUID().uuidString
  
  var index: Int = 0
  var value: Double = 0
@@ -28,8 +28,8 @@ final class VLRadialGraphSegmentData: Identifiable
 
 extension VLRadialGraphSegmentData: Equatable
 {
- static func == (lhs: VLRadialGraphSegmentData,
-                 rhs: VLRadialGraphSegmentData) -> Bool
+ public static func == (lhs: VLRadialGraphSegmentData,
+                        rhs: VLRadialGraphSegmentData) -> Bool
  {
   return    lhs.id == rhs.id
          && lhs.index == rhs.index

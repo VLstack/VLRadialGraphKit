@@ -49,35 +49,35 @@ extension EnvironmentValues
 
 extension View
 {
- func radialGraphSegment(fill color: Color) -> some View
+ public func radialGraphSegment(fill color: Color) -> some View
  {
   self.environment(\.radialGraphSegmentFill, color)
  }
 
- func radialGraphSegment(thickness: Double) -> some View
+ public func radialGraphSegment(thickness: Double) -> some View
  {
   self.environment(\.radialGraphSegmentThickness, thickness)
  }
 
- func radialGraphSegment(fill color: Color,
+ public func radialGraphSegment(fill color: Color,
                          thickness: Double) -> some View
  {
   self.radialGraphSegment(fill: color)
       .radialGraphSegment(thickness: thickness)
  }
  
- func radialGraphSegment(stroke color: Color) -> some View
+ public func radialGraphSegment(stroke color: Color) -> some View
  {
   self.environment(\.radialGraphSegmentStroke, color)
  }
  
- func radialGraphSegment(strokeWidth: Double) -> some View
+ public func radialGraphSegment(strokeWidth: Double) -> some View
  {
   self.environment(\.radialGraphSegmentStrokeWidth, strokeWidth)
  }
  
- func radialGraphSegment(stroke color: Color,
-                         strokeWidth: Double) -> some View
+ public func radialGraphSegment(stroke color: Color,
+                                strokeWidth: Double) -> some View
  {
   self.radialGraphSegment(stroke: color)
       .radialGraphSegment(strokeWidth: strokeWidth)

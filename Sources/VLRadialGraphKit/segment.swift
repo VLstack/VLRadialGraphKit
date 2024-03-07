@@ -1,7 +1,7 @@
 import SwiftUI
 import VLShapeKit
 
-struct VLRadialGraphSegment: View
+public struct VLRadialGraphSegment: View
 {
  @Environment(\.radialGraphSegmentThickness) private var thickness
  @Environment(\.radialGraphSegmentFill) private var fill
@@ -26,7 +26,7 @@ struct VLRadialGraphSegment: View
                                                 set: { _ in })
  }
 
- var body: some View
+ public var body: some View
  {
   if fill != .clear
   {

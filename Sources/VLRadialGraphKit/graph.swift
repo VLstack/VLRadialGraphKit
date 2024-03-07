@@ -2,7 +2,7 @@ import SwiftUI
 import Combine
 import VLShapeKit
 
-struct VLRadialGraph: View
+public struct VLRadialGraph: View
 {
  @Environment(\.radialGraphColors) private var colors
  @Environment(\.radialGraphThickness) private var thickness
@@ -27,7 +27,7 @@ struct VLRadialGraph: View
                                 maximum: maximum)
  }
  
- var body: some View
+ public var body: some View
  {
   @Bindable var data = data
   
