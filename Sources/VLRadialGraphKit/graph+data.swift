@@ -15,8 +15,8 @@ public final class VLRadialGraphData: Identifiable//, Sendable
  @ObservationIgnored
  var maximum: Double?
 
- var segments: [ VLRadialGraphSegmentData ]
- var points: [ VLArcPoints ]
+ public var segments: [ VLRadialGraphSegmentData ]
+ public var points: [ VLArcPoints ]
  
  public init(values: [ Double ] = [],
              startAngle: Double = 215,
