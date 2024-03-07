@@ -11,15 +11,15 @@ public struct VLRadialGraph: View
 
  var data: VLRadialGraphData
  
- init(data: VLRadialGraphData)
+ public init(data: VLRadialGraphData)
  {
   self.data = data
  }
  
- init(values: [ Double ],
-      startAngle: Double = 215,
-      endAngle: Double = 90,
-      maximum: Double? = nil)
+ public init(values: [ Double ],
+             startAngle: Double = 215,
+             endAngle: Double = 90,
+             maximum: Double? = nil)
  {
   self.data = VLRadialGraphData(values: values,
                                 startAngle: startAngle,

@@ -18,10 +18,10 @@ public final class VLRadialGraphData: Identifiable//, Sendable
  var segments: [ VLRadialGraphSegmentData ]
  var points: [ VLArcPoints ]
  
- init(values: [ Double ] = [],
-      startAngle: Double = 215,
-      endAngle: Double = 90,
-      maximum: Double? = nil)
+ public init(values: [ Double ] = [],
+             startAngle: Double = 215,
+             endAngle: Double = 90,
+             maximum: Double? = nil)
  {
   self.values = values
   self.startAngle = startAngle

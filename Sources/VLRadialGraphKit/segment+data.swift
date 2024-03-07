@@ -12,11 +12,11 @@ public final class VLRadialGraphSegmentData: Identifiable
  var startAngle: Double = 0
  var endAngle: Double = 0
  
- init(index: Int = 0,
-      value: Double = 0,
-      percent: Double = 0,
-      startAngle: Double = 0,
-      endAngle: Double = 0)
+ public init(index: Int = 0,
+             value: Double = 0,
+             percent: Double = 0,
+             startAngle: Double = 0,
+             endAngle: Double = 0)
  {
   self.index = index
   self.value = value

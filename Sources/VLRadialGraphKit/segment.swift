@@ -13,10 +13,10 @@ public struct VLRadialGraphSegment: View
  @Binding var data: VLRadialGraphSegmentData
  @Binding var points: VLArcPoints
 
- init(startAngle: Double,
-      endAngle: Double,
-      data: Binding<VLRadialGraphSegmentData>? = nil,
-      points: Binding<VLArcPoints>? = nil)
+ public init(startAngle: Double,
+             endAngle: Double,
+             data: Binding<VLRadialGraphSegmentData>? = nil,
+             points: Binding<VLArcPoints>? = nil)
  {
   self.startAngle = startAngle
   self.endAngle = endAngle
