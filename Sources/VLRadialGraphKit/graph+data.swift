@@ -67,7 +67,7 @@ public final class VLRadialGraphData: Identifiable//, Sendable
   if update { await compute() }
  }
 
- private func compute() async
+ package func compute() async
  {
   let startAngle: Double = normalize(angle: self.startAngle)
   var endAngle: Double = normalize(angle: self.endAngle)
