@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "vlshapekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/VLstack/VLShapeKit.git",
+      "state" : {
+        "revision" : "e934871a504afdde7decfcf0d47382bc2976c68b",
+        "version" : "1.0.4"
+      }
+    }
+  ],
+  "version" : 2
+}
