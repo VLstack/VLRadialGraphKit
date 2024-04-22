@@ -52,7 +52,6 @@ extension VLRadialGraphSegment
         points: points)
  }
 
- // @ViewBuilder
  private var filled: some View
  {
   arc.fill(fill)
@@ -67,16 +66,6 @@ extension VLRadialGraphSegment
    .stroke(stroke, lineWidth: strokeWidth)
   }
  }
-}
-
-// MARK: - Computed properties
-extension VLRadialGraphSegment
-{
-}
-
-// MARK: - Functions
-extension VLRadialGraphSegment
-{
 }
 
 // MARK: - Previews

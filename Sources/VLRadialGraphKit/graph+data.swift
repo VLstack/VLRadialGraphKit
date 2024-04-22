@@ -2,18 +2,14 @@ import SwiftUI
 import VLShapeKit
 
 @Observable
-public final class VLRadialGraphData: Identifiable//, Sendable
+public final class VLRadialGraphData: Identifiable, Sendable
 {
  public let id: String = UUID().uuidString
 
- @ObservationIgnored
- var values: [ Double ]
- @ObservationIgnored
- var startAngle: Double
- @ObservationIgnored
- var endAngle: Double
- @ObservationIgnored
- var maximum: Double?
+ @ObservationIgnored var values: [ Double ]
+ @ObservationIgnored var startAngle: Double
+ @ObservationIgnored var endAngle: Double
+ @ObservationIgnored var maximum: Double?
 
  public var segments: [ VLRadialGraphSegmentData ]
  public var points: [ VLArcPoints ]

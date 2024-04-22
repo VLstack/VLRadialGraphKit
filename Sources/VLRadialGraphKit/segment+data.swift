@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI
 
 @Observable
-public final class VLRadialGraphSegmentData: Identifiable//, Sendable
+public final class VLRadialGraphSegmentData: Identifiable, Sendable
 {
  public let id: String = UUID().uuidString
  
