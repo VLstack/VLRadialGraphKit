@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/VLstack/VLShapeKit.git",
       "state" : {
-        "revision" : "e934871a504afdde7decfcf0d47382bc2976c68b",
-        "version" : "1.0.4"
+        "revision" : "36e5a334c4855f6f0361057cbd06ebd36b7bac5b",
+        "version" : "1.1.0"
       }
     }
   ],
